@@ -6,26 +6,33 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5bbce2ab5d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div>
-    <header>
-        <nav>
-            <div class="row">
+        <header>
+            <nav>
+             <div class="row">
                  <ul>
 
                     <li class="lista">HOLA</li>               
                     <li class="lista">CONOCIMIENTOS</li>
                     <li class="lista">PROYECTOS</li>
-                    <li class="contacto boton"><a href="x">CONTACTO</a></li>
+                    <li class="contacto boton"><a  href="x">CONTACTO</a></li>
 
                 </ul>
-            </div>
-        </nav>
-    </header>
+             </div>
+             </nav>
+
+        </header>
     </div>
 
-    <section>
+    <section class="barra-de-navegacion">
+     
+    </section>        
+
+
+    <section class="main">
     
         <div class="presentacion ">
         
@@ -36,24 +43,50 @@
             <a href="x" class=" boton2">LO QUE HAGO</a>
 
         </div>
-
-        <div>
-            <img src ="./imagenes/workinprogress.svg"  >
-        </div>
+        <div class="presentacion " id="imagen">
+        
+    </div>
+        
+        
    
     </section>
 
-    <section>
+    <section class=" conocimientos">
 
-        <h2>Mis conomientos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae nam dolores</p>
-
-        <p>HTML 5</p>
-        <p>CSS 3</p>
-        <p>Sass</p>
-        <p>JavaScript</p>
-        <p>React</p>
-        <p>Git</p>
+        <h2 class="margen">Mis conocimientos</h1>
+        <p class="p-skill">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque
+            neque molestias consequuntur vel ab quas architecto.
+        
+        </p>
+            
+    <div class="layout">
+        <div class="caja">
+           
+            <main>
+                <i class="fab fa-html5 skill-icon html-icon"></i>    
+            </main>
+            <footer>
+                <p class="texto-skill">HTML 5</p> 
+            </footer>
+        </div>
+        <div class="caja">
+            <main>
+                <i class="fab fa-css3-alt skill-icon css-icon"></i>
+            </main>
+            <footer>
+                <p class="texto-skill">CSS 3</p> 
+            </footer>
+        </div>
+        <div class="caja">
+            <main>
+                <i class="fab fa-sass sass-icon sass-icon "></i>            </main>
+            <footer>
+                <p class="texto-skill">Sass</p> 
+            </footer>
+        </div>
+     
+    </div>
     </section>
 
 </body>
