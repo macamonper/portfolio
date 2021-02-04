@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 *{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    overflow-x: hidden;
+    height: 100%
+}
 body{
     font-family: 'Montserrat', sans-serif;
-
+    
 
 }
 
 /* COMIENZO DE HEADER */
 header{
-    padding: 25px 0;
+    padding: 1.5em 0;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    box-shadow: 0 0 30px 0 rgba(134, 134, 134, 0.25);
     position: fixed;
 
     display: flex;
@@ -36,9 +40,9 @@ ul{
 
 .lista{
     list-style: none;
-    margin: 0 15px;
+    margin: 0 0.93em;
     color: #2E2E31;
-    padding: 5px;
+    padding: 0.31em;
 
 
 }
@@ -56,25 +60,25 @@ ul{
     outline: 0;
 }
 
-.lista:focus {
-    box-shadow:  #ff006e;
-    outline: none;
-}
 a{
     text-decoration: none;
     color: white;
 }
 .contacto{
-    margin-left: 18px;
-    margin-right: 90px;
+    margin-left: 1.12em;
+    margin-right: 5.625em;
     color: white;
-    background-color: #ff006e;
-    padding: 10px 30px ;
+    background-color: #f780a7;
+    padding: 0.62em 1.87em ;
     border-radius: 100px;
     font-weight: 500;
 }
 .contacto:hover{
 opacity: 0.8;
+}
+.contacto:active {
+    box-shadow: 0px 0px 7px #f780a7;
+    outline: 0;
 }
     
 
@@ -93,70 +97,74 @@ opacity: 0.8;
   }
 
 /*COMIENZO PRESENTACION*/
-section {
+
+.section {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 110px 40px 130px 40px;
- }
+    padding: 6.875em 2.5em 3em ;
 
+ }
+ .presentacionsection{
+    min-height: calc(100vh - 90px);
+
+ }
+ .column {
+    width: 100%;
+    max-width: 1100px;
+ }
 
 .main {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 3em;
 }
-
-
 .presentacion{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
     text-align: left;
-    margin-top: 90px;
-    padding: 110px 40px 130px;
+    width: 50%;
+    padding: 6.875em 0em; 
 }
 
 p{
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
-#imagen{
-    background: url(/imagenes/workinprogress.svg) no-repeat;
-    background-size:100% 100% ;
-    width: 500px;
-    height: 500px;
-}
 
+.size{
+    width: 50%;
+}
 .hola{
-    font-size: 30px;
+    font-size: 1.87rem;
     font-weight: 800;
-    margin-bottom: 5px;
+    margin-bottom: 0.312em;
     color: #2E2E31;
 
 }
 .nombre{
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 900;
-    margin-bottom: 5px;
-    color: #ff006e;
+    color: #f780a7;
 }
 .info{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 40px;
-    margin-top: 16px;
+    margin-bottom: 2.5em;
+    margin-top: 1em;
     color:#616161
 }
 .boton2 {
-    background-color:#ff006e;
+    background-color:#f780a7;
     color: white;
-    padding: 15px 40px;
+    padding: 0.93em 2.5em 0.93em ;
     border-radius: 100px;
     font-weight: 500;
+
 }
 .boton2:hover{
     opacity: 0.8;
@@ -164,37 +172,33 @@ p{
 /*FIN PRESENTACION-COMIENZO SKILLS*/
 .conocimientos{
     background-color: #f6f7fb;
- 
+    width: 100%;
+    
+}
+.flex{
     display: flex;
     flex-direction: column;
-    align-items:center;
     justify-content: center;
-    padding: 110px 40px 130px;
+    align-items: center;
 }
-
 h2{
-    font-size: 45px ;
+    font-size: 2.81em;
     font-weight: 900;
-    margin-bottom: 37.35px 0px 16.875px;
+    margin-bottom: 0.375em;
 }
 
 .p-skill{
+  
     max-width: 400px;
-    margin: 16px 0px;
-    color: #2E2E31;
-    display: flex;
-    text-align: center;
-}
+    color: #3f3f42;
+    
 
-.margen{
-    margin:37px 0px 17px;
 }
-
 
 /*COMIENZO GRID*/
 
 .layout{
-    padding: 50px;
+    padding: 3.125em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -202,29 +206,23 @@ h2{
 .caja{
   
     border: 1px solid #e6e0e0;
-    width: 260px;
-    height: 226px;
-    margin: 10px;
+    width: 16.25em;
+    height: 14.125em;
+    margin: 0.625em;
     border-radius: 8px;
-    padding: 30px;
+    padding: 1.87em;
     background-color: #fffdfd;
     color: #2e2e31;
 
 }
 .caja:hover{
-    color:#ff006e;
-    border-color: #ff006e;
-   }
-.skill-icon {
-    font-size: 86px;
-    margin-top: 24px;
-    margin-bottom: 18px;
+    color:#f780a7;
+    border-color: #f780a7;
 }
 
-
-.texto-skill{
-    font-size: 20px;
-    font-weight: 700;
+.skill-icon {
+    font-size: 5.37rem;
+    margin-bottom: 0.25em;
 }
 
 .html-icon{
@@ -236,8 +234,138 @@ h2{
 }
 
 .sass-icon{
-    font-size: 70px;
-    margin-top: 30px;
-    margin-bottom: 28px;
+    font-size: 5.1rem;
+    margin-top: 0.03em;
+    margin-bottom: 0.31em;
     color:rgb(205, 92, 135);
 }
+.java-icon{
+    color: #f0db4f;
+}
+.react-icon{
+    color:#61dafb;
+}
+.git-icon{
+    color:#f34f29;
+}
+.texto-skill{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+/*FIN SKILLS-COMIENZO QUOTE*/
+
+.quote{
+    background-color:#f780a7; 
+    padding: 6em 2.5em 8.125em;
+    color: white;
+    
+}
+.quotesize{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1.25em;
+    
+}
+.pquote{
+    font-size:3rem;
+    max-width: 800px;
+}
+.autor{
+    font-size: 1.69em;
+    font-weight: 900;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+/*FIN QUOTE-COMIENZO MIS PROYECTOS*/
+
+.layout2{
+
+    padding: 3em 0em;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.cajon{
+    border:1px solid #e0e0e0; 
+    border-radius: 5%;
+    background-color: #ffffff ;
+    width:21.375em;
+    height: 21.75em;
+    margin: 0.625em;
+    padding: 1%;
+    font-weight: 600;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.style-projects{
+    width: 100%;
+
+}
+.size2{
+    width:80%;
+}
+.margenabajo{
+    margin-bottom: 0.6em;
+}
+
+.margenabajo2{
+    margin-bottom: 0.9em;
+}
+
+/*FIN PROJECTS//COMIENZO FORMULARIO*/
+
+
+/* MEDIA QUERY*/
+
+@media only screen and (max-width: 700px) {
+
+    header{
+        display: none;
+    }
+
+    .section {
+        padding: 5em 1.25em;}
+
+    .main{
+        margin-top: 0em;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-center;
+
+    }
+
+    .column {
+        max-width: 100%;
+    }
+      
+    .presentacion{
+        align-items:center;
+        text-align: center;
+        width:90%;
+
+    }
+    .nombre{
+        font-size: 3em;
+    }
+
+    .info{
+        font-size: 1.2em;
+
+    }
+    .size{
+        width: 100%;
+    }
+    .layout2{
+        padding:0 ;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+
+  }
+  
