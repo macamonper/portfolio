@@ -33,12 +33,12 @@ header{
 
 
 }
-ul{
+.centro{
     display: flex;
     align-items: center;
 }
 
-.lista{
+li{
     list-style: none;
     margin: 0 0.93em;
     color: #2E2E31;
@@ -46,21 +46,25 @@ ul{
 
 
 }
-.lista:hover{
+.li1:hover{
     color:#ff006e;
     cursor: pointer;
     
-
 }
 
-.lista:active{
+.li1:active{
     border-radius: 80px;
     color: :#ff006e;
     box-shadow: 0px 0px 7px #ff006e;
     outline: 0;
 }
-
 a{
+    text-decoration: none;
+     color: #2E2E31;
+    ;
+
+}
+.a1{
     text-decoration: none;
     color: white;
 }
@@ -308,6 +312,7 @@ h2{
 .size2{
     width:80%;
 }
+
 .margenabajo{
     margin-bottom: 0.6em;
 }
@@ -317,6 +322,179 @@ h2{
 }
 
 /*FIN PROJECTS//COMIENZO FORMULARIO*/
+
+/*FIN PROJECTS//COMIENZO FORMULARIO*/
+
+.form{
+    background-color: #f6f7fb;
+    padding: 6.87em 2.5em 8.12em;
+    
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    border:1px solid #e0e0e0; 
+    background-color: #ffffff;
+    border-radius: 3%;
+    padding: 80px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+.p-contacto{
+    
+    max-width: 300px;
+    color: #3f3f42;
+      
+}
+
+.contact-links {
+    margin-top: 2.5em;
+}
+
+
+.social-item {
+    display: flex;
+    padding: 0.312em 0;
+}
+.social-item:focus{
+    
+    border-radius: 80px;
+    color: :#ff006e;
+    box-shadow: 0px 0px 7px #ff006e;
+    outline: 0;
+}
+.a2{
+    text-decoration: none;
+    color: #3f3f42;    
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.a2:hover{
+    color: #f780a7;
+}
+.contact-link {
+    display: flex;
+    align-items: center;
+    padding: 0.31em 0.625em;
+    border-radius: 100px;
+    
+}
+.social-icon {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #ffff;
+    color:#f780a7; 
+    border-radius: 50%;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-right: 0.625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon:hover{
+    color:white;
+    background-color: #f780a7;
+    border: 1px solid #f780a7;
+    border-radius: 50%;
+}
+
+.datos{
+    display: flex;
+}
+
+label{
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+input{
+    border-radius:20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    font-size: 1rem;
+    padding: 0.62em 0.93em;
+    width: 95%;
+    margin-top: 0.5em;
+}
+
+input:focus{
+    border-radius: 80px;
+    color: :#ff006e;
+    box-shadow: 0px 0px 7px #ff006e;
+    outline: 0; 
+    
+}
+
+textarea{
+    border-radius: 20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    font-size: 1rem;
+    padding: 0.62em 0.93em;
+    width: 100%;
+}
+textarea:focus{
+    color: :#ff006e;
+    box-shadow: 0px 0px 7px #ff006e;
+    outline: 0; 
+}
+button{
+    border: none;
+}
+
+
+/*FIN FORMULARIO-COMIENZO FOOTER*/
+.footer2{
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-wrap: wrap;
+
+padding: 0em 1.25em 3.75em;
+}
+
+.footerlink{
+    color: white;
+    font-size: 0.87em
+}
+
+.footersocial{
+    display: flex;
+    margin: 1.7em 0em;
+}
+.footer-icon {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #ffff;
+    color:#f780a7; 
+    border-radius: 50%;
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30% 20%;
+
+}
+.footer-icon:hover{
+    border: 0.5px solid white;
+    color: white;
+    background-color:#f780a7 ;
+
+}
+.li3:active{
+    border-radius: 80px;
+    color: :white;
+    padding:0.3em;
+    box-shadow: 0px 0px 7px white;
+    outline: 0;
+}
 
 
 /* MEDIA QUERY*/
@@ -365,7 +543,35 @@ h2{
         justify-content: center;
         
     }
-    
+    .form{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background-color: transparent;
+        }
+
+    .datos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor{
+        padding: 0.5em;
+        border: none;
+    }
+    .contactame{
+        display: flex;
+        flex-direction: column;
+        padding:1.25em;
+        overflow:auto;
+
+    }
+    .formulario{
+        padding: 1.25em;
+    }
+    nav{
+        display: none;
+    }
+ 
 
   }
   
