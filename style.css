@@ -362,7 +362,7 @@ h2{
 
 .social-item {
     display: flex;
-    padding: 0.312em 0;
+    padding: 0.312em 1em;
 }
 .social-item:focus{
     
